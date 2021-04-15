@@ -16,12 +16,13 @@ body{
 
 
 
-
+/* Head navbar */
 .head_navbar{
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     position: fixed;
-    width: 100%;
+    width: 85%;
     top: 0;
+    left: 15%;
 }
 
 #btn_upgrade{
@@ -37,7 +38,6 @@ body{
 
 
 /* Vertical navbar */
-
 .nav-link{
     padding: .3rem 0;
     font-size: .8rem;
@@ -45,6 +45,13 @@ body{
 
 .logo > img{
     height: 2rem;
+}
+
+.logo_large{
+}
+
+.logo_small{
+    display: none;
 }
 
 .install_app{
