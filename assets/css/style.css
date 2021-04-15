@@ -2,16 +2,34 @@
 /* Rule */
 body{
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 } 
 
 /* Utility */
-.opacity{
-    opacity: 50%;
+.container_page{
+    width: 85%;
+    margin-left: 15%;
+}
+
+.vh100{
+   height: 100vh;
+}
+
+.br_05{
+    filter: brightness(0.5);
 }
 
 /* Colors */
 .bg_black{
     background-color: #000000;
+}
+
+.bg_main{
+    background-color: #141922;
+}
+
+.text_grey{
+    color: #797B80;
 }
 
 
@@ -20,24 +38,25 @@ body{
 .head_navbar{
     background-color: #000000;
     position: fixed;
-    width: 85%;
+    width: 100%;
     top: 0;
-    left: 15%;
 }
 
 #btn_upgrade{
+    padding: .5rem 2rem;
     border-radius: 20px;
     font-size: .7rem;
+    font-weight: 600;
 }
 
 
-
-
-
-
-
-
 /* Vertical navbar */
+.vertical_navbar{
+    position: fixed;
+    top: 0;
+    width: 15%;
+}
+
 .nav-link{
     padding: .3rem 0;
     font-size: .8rem;
@@ -66,4 +85,27 @@ body{
     color: #000000;
     font-size: 1rem;
     margin-right: .4rem;
+    padding: .45rem .65rem;
+}
+
+.vertical_link_active{
+    border-left: .2rem solid #ADFF2F;
+    margin-left: -1rem;
+    padding-left: .8rem;
+}
+
+/* Main navbar */
+.main_nav a{
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.main_link_active::after{
+    content: "";
+    display: block;
+    height: .2rem;
+    width: 40%;
+    margin: auto;
+    background-color: #ADFF2F;
+    margin-top: -.2rem;
 }

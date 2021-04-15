@@ -30,92 +30,141 @@
 
 <body>
 
+    <!-- Site header -->
     <header class="site_header">
 
+      <!-- Head Navbar -->
       <div class="head_navbar">
 
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <button id="btn_upgrade" type="button" class="btn btn-outline-light text-uppercase px-4 m-3">effettua l'upgrade</button>
+            <button id="btn_upgrade" type="button" class="btn btn-outline-light text-uppercase mx-3 my-4">effettua l'upgrade</button>
           </li>
         </ul>
 
       </div>
-
-      
-
+       <!-- Head Navbar -->
 
         <!-- Vertical navbar -->
-        <div class="vertical_navbar">
+      <div class="vertical_navbar">
 
-          <div class="d-flex flex-column p-3 text-white bg_black" style="width: 15%; height: 100vh">
-          
-            <div class="logo mb-3">
-              <img class="img-fluid logo_large" src="./assets/img/logo.svg" alt="">
-              <img class="img-fluid logo_small" src="./assets/img/logo-small.svg" alt="">
-            </div>
-  
-            <nav class="nav flex-column">
-              <a class="nav-link text-white text-decoration-none" href="#">
-                <img src="./assets/img/home.svg" alt="" class="img-fluid" width="22" height="22">
-                <span class="align-middle">Home</span>
-              </a>
-              <a class="nav-link text-white text-decoration-none opacity" href="#">
-                <img src="./assets/img/search.svg" alt="" class="img-fluid" width="22" height="22">
-                <span class="align-middle">Cerca</span>
-              </a>
-              <a class="nav-link text-white text-decoration-none opacity" href="#">
-                <img src="./assets/img/libreria.svg" alt="" class="img-fluid" width="22" height="22">
-                <span class="align-middle">La tua libreria</span>
-              </a>
-              <a class="nav-link text-white text-decoration-none mt-2" href="#">
-                <h7 class="text-uppercase">playlist</h7>
-              </a>
-              <a class="nav-link text-white text-decoration-none opacity" href="#">
-                <i id="black_plus" class="fas fa-plus bg-white p-2"></i>
-                <span class="align-middle">Crea Playlist</span>
-              </a>
-              <a class="nav-link text-white text-decoration-none opacity" href="#">
-                <span class="align-middle">Nuova Playlist</span>
-              </a>
-              <a class="nav-link text-white text-decoration-none opacity" href="#">
-                <span class="align-middle">Nuova Playlist</span>
-              </a>
-              <a class="nav-link text-white text-decoration-none opacity" href="#">
-                <span class="align-middle">Nuova Playlist</span>
-              </a>
-              <a class="nav-link text-white text-decoration-none opacity" href="#">
-                <span class="align-middle">Nuova Playlist</span>
-              </a>
-              <a class="nav-link text-white text-decoration-none opacity" href="#">
-                <span class="align-middle">Nuova Playlist</span>
-              </a>
-              <a class="nav-link text-white text-decoration-none opacity" href="#">
-                <span class="align-middle">Nuova Playlist</span>
-              </a>
-              <a class="nav-link text-white text-decoration-none opacity" href="#">
-                <span class="align-middle">Nuova Playlist</span>
-              </a>
-            </nav>
-            <div class="install_app mt-auto opacity">
-              <img src="./assets/img/download.svg" alt="" class="img-fluid" width="15" height="15">
-              <span class="">Installa app</span>
-            </div>
-            <hr class="mt-1" >
-            <div class="dropdown">
-              <a href="#" class="d-flex align-items-center text-white text-decoration-none" id="dropdownUser1" aria-expanded="false">
-                <img src="./assets/img/Emanuele.jpg" alt="mdo" width="32" height="32" class="rounded-circle me-2">
-                <span class="user"><strong>Emanuele</strong></span>
-              </a>
-            </div>
+        <div class="vh100 d-flex flex-column p-3 text-white bg_black">
+        
+          <div class="logo mb-4">
+            <img class="img-fluid logo_large" src="./assets/img/logo.svg" alt="">
+            <img class="img-fluid logo_small" src="./assets/img/logo-small.svg" alt="">
           </div>
 
+          <nav class="nav flex-column">
+            <a class="nav-link text-white text-decoration-none vertical_link_active" href="#">
+              <img src="./assets/img/home.svg" alt="" class="img-fluid" width="22" height="22">
+              <span class="align-middle">Home</span>
+            </a>
+            <a class="nav-link text-white text-decoration-none br_05" href="#">
+              <img src="./assets/img/search.svg" alt="" class="img-fluid" width="22" height="22">
+              <span class="align-middle">Cerca</span>
+            </a>
+            <a class="nav-link text-white text-decoration-none br_05" href="#">
+              <img src="./assets/img/libreria.svg" alt="" class="img-fluid" width="22" height="22">
+              <span class="align-middle">La tua libreria</span>
+            </a>
+            <a class="nav-link text-white text-decoration-none mt-2" href="#">
+              <h7 class="text-uppercase">playlist</h7>
+            </a>
+            <a class="nav-link text-white text-decoration-none align-middle br_05" href="#">
+              <i id="black_plus" class="fas fa-plus bg-white"></i>
+              <span style="font-size: .85rem;">Crea Playlist</span>
+            </a>
+
+            <div class="scroll_playlist">
+
+              <a class="nav-link text-white text-decoration-none pt-2 br_05" href="#">
+                <span class="align-middle">Nome Playlist</span>
+              </a>
+              <a class="nav-link text-white text-decoration-none pt-1 br_05" href="#">
+                <span class="align-middle">Nome Playlist</span>
+              </a>
+              <a class="nav-link text-white text-decoration-none pt-1 br_05" href="#">
+                <span class="align-middle">Nome Playlist</span>
+              </a>
+              <a class="nav-link text-white text-decoration-none pt-1 br_05" href="#">
+                <span class="align-middle">Nome Playlist</span>
+              </a>
+              <a class="nav-link text-white text-decoration-none pt-1 br_05" href="#">
+                <span class="align-middle">Nome Playlist</span>
+              </a>
+              <a class="nav-link text-white text-decoration-none pt-1 br_05" href="#">
+                <span class="align-middle">Nome Playlist</span>
+              </a>
+              <a class="nav-link text-white text-decoration-none pt-1 br_05" href="#">
+                <span class="align-middle">Nome Playlist</span>
+              </a>
+
+            </div>
+            
+          </nav>
+          <div class="install_app mt-auto br_05">
+            <img src="./assets/img/download.svg" alt="" class="img-fluid" width="15" height="15">
+            <span class="">Installa app</span>
+          </div>
+          <hr class="mt-1" >
+          <div class="dropdown">
+            <a href="#" class="d-flex align-items-center text-white text-decoration-none" id="dropdownUser1" aria-expanded="false">
+              <img src="./assets/img/Emanuele.jpg" alt="mdo" width="32" height="32" class="rounded-circle me-2">
+              <span class="user"><strong>Emanuele</strong></span>
+            </a>
+          </div>
         </div>
+
+      </div>
         <!-- end Vertical navbar -->
 
-        
-       
     </header>
+    <!-- end Site header -->
+
+    <!-- Site main -->
+    <main class="site_main bg_main pt-5">
+
+     
+      <div class="container_page pt-4">
+
+
+        <!-- Main_navbar -->
+        <div class="main_nav pt-3">
+
+          <ul class="nav justify-content-center text-uppercase">
+            <li class="nav-item main_link_active px-2">
+              <a class="nav-link text-white br_05" href="#">in evidenzia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white br_05 px-2" href="#">podcast</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white br_05 px-2" href="#">classifiche</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white br_05 px-2" href="#">generi e mood</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white br_05 px-2" href="#">nuove uscite</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white br_05 px-2" href="#">scopri</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- end Main_navbar -->
+        
+
+
+
+      </div>
+
+
+
+    </main>
+    <!-- end Site main -->
     
 </body>
 
