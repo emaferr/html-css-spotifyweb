@@ -1,0 +1,62 @@
+
+/* Rule */
+body{
+    font-family: 'Montserrat', sans-serif;
+} 
+
+/* Utility */
+.opacity{
+    opacity: 50%;
+}
+
+/* Colors */
+.bg_black{
+    background-color: #000000;
+}
+
+
+
+
+.head_navbar{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#btn_upgrade{
+    border-radius: 20px;
+    font-size: .7rem;
+}
+
+
+
+
+
+
+
+
+/* Vertical navbar */
+
+.nav-link{
+    padding: .3rem 0;
+    font-size: .8rem;
+}
+
+.logo > img{
+    height: 2rem;
+}
+
+.install_app{
+    font-size: .7rem;
+}
+
+.user{
+    font-size: .8rem;
+}
+
+#black_plus{
+    color: #000000;
+    font-size: 1rem;
+    margin-right: .4rem;
+}
