@@ -32,7 +32,9 @@ body{
     color: #797B80;
 }
 
-
+.install_app{
+    cursor: pointer;
+}
 
 /* Head navbar */
 .head_navbar{
@@ -47,6 +49,7 @@ body{
     border-radius: 20px;
     font-size: .7rem;
     font-weight: 600;
+    transition: .2s;
 }
 
 
@@ -136,6 +139,19 @@ body{
     line-height: 0rem;
 }
 
+.play{
+    position: relative;
+}
+
+.play i{
+    font-size: 6vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; 
+}   
+
 /* Popular srction */
 .popular_section{
     padding-bottom: 9rem;
@@ -150,7 +166,29 @@ body{
     overflow-y: overlay;
 }
 
+/* Hover */
+.br1:hover{
+    filter: brightness(1);
+}
 
+#btn_upgrade:hover{
+    transform : scale(1.2);
+    position: absolute; 
+    right: 40px;
+}
+
+.play:hover .play_img{
+    filter: brightness(0.5);
+}
+
+.play:hover i{
+    display: block;
+}
+
+
+
+
+/* Media Query */
 @media only screen and (max-width: 640px){
 
     .container_page{
