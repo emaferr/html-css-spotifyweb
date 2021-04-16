@@ -51,52 +51,52 @@
         <div class="vh100 d-flex flex-column p-3 text-white bg_black">
         
           <div class="logo mb-4">
-            <img class="img-fluid logo_large" src="./assets/img/logo.svg" alt="">
-            <img class="img-fluid logo_small" src="./assets/img/logo-small.svg" alt="">
+            <img class="logo_large small_none" src="./assets/img/logo.svg" alt="">
+            <img class="logo_small" src="./assets/img/logo-small.svg" alt="">
           </div>
 
-          <nav class="nav flex-column">
+          <nav class="nav flex-column mt-1">
             <a class="nav-link text-white text-decoration-none vertical_link_active" href="#">
               <img src="./assets/img/home.svg" alt="" class="img-fluid" width="22" height="22">
-              <span class="align-middle">Home</span>
+              <span class="align-middle small_none">Home</span>
             </a>
             <a class="nav-link text-white text-decoration-none br_05" href="#">
               <img src="./assets/img/search.svg" alt="" class="img-fluid" width="22" height="22">
-              <span class="align-middle">Cerca</span>
+              <span class="align-middle small_none">Cerca</span>
             </a>
             <a class="nav-link text-white text-decoration-none br_05" href="#">
               <img src="./assets/img/libreria.svg" alt="" class="img-fluid" width="22" height="22">
-              <span class="align-middle">La tua libreria</span>
+              <span class="align-middle small_none">La tua libreria</span>
             </a>
-            <a class="nav-link text-white text-decoration-none mt-2" href="#">
+            <a class="nav-link text-white text-decoration-none mt-3 py-1 small_none" href="#">
               <h7 class="text-uppercase">playlist</h7>
             </a>
-            <a class="nav-link text-white text-decoration-none align-middle br_05" href="#">
+            <a class="nav-link text-white text-decoration-none align-middle br_05 small_none" href="#">
               <i id="black_plus" class="fas fa-plus bg-white"></i>
               <span style="font-size: .85rem;">Crea Playlist</span>
             </a>
 
-            <div class="scroll_playlist">
+            <div class="scroll_playlist overflow-auto small_none">
 
+              <a class="nav-link text-white text-decoration-none pt-3 br_05" href="#">
+                <span class="align-middle">Nome Playlist</span>
+              </a>
               <a class="nav-link text-white text-decoration-none pt-2 br_05" href="#">
                 <span class="align-middle">Nome Playlist</span>
               </a>
-              <a class="nav-link text-white text-decoration-none pt-1 br_05" href="#">
+              <a class="nav-link text-white text-decoration-none pt-2 br_05" href="#">
                 <span class="align-middle">Nome Playlist</span>
               </a>
-              <a class="nav-link text-white text-decoration-none pt-1 br_05" href="#">
+              <a class="nav-link text-white text-decoration-none pt-2 br_05" href="#">
                 <span class="align-middle">Nome Playlist</span>
               </a>
-              <a class="nav-link text-white text-decoration-none pt-1 br_05" href="#">
+              <a class="nav-link text-white text-decoration-none pt-2 br_05" href="#">
                 <span class="align-middle">Nome Playlist</span>
               </a>
-              <a class="nav-link text-white text-decoration-none pt-1 br_05" href="#">
+              <a class="nav-link text-white text-decoration-none pt-2 br_05" href="#">
                 <span class="align-middle">Nome Playlist</span>
               </a>
-              <a class="nav-link text-white text-decoration-none pt-1 br_05" href="#">
-                <span class="align-middle">Nome Playlist</span>
-              </a>
-              <a class="nav-link text-white text-decoration-none pt-1 br_05" href="#">
+              <a class="nav-link text-white text-decoration-none pt-2 br_05" href="#">
                 <span class="align-middle">Nome Playlist</span>
               </a>
 
@@ -105,13 +105,13 @@
           </nav>
           <div class="install_app mt-auto br_05">
             <img src="./assets/img/download.svg" alt="" class="img-fluid" width="15" height="15">
-            <span class="">Installa app</span>
+            <span class="small_none">Installa app</span>
           </div>
           <hr class="mt-1" >
           <div class="dropdown">
             <a href="#" class="d-flex align-items-center text-white text-decoration-none" id="dropdownUser1" aria-expanded="false">
               <img src="./assets/img/Emanuele.jpg" alt="mdo" width="32" height="32" class="rounded-circle me-2">
-              <span class="user"><strong>Emanuele</strong></span>
+              <span class="user small_none"><strong>Emanuele</strong></span>
             </a>
           </div>
         </div>
@@ -125,46 +125,172 @@
     <!-- Site main -->
     <main class="site_main bg_main pt-5">
 
-     
       <div class="container_page pt-4">
-
 
         <!-- Main_navbar -->
         <div class="main_nav pt-3">
 
           <ul class="nav justify-content-center text-uppercase">
-            <li class="nav-item main_link_active px-2">
+            <li class="nav-item main_link_active">
               <a class="nav-link text-white br_05" href="#">in evidenzia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white br_05 px-2" href="#">podcast</a>
+              <a class="nav-link text-white br_05" href="#">podcast</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white br_05 px-2" href="#">classifiche</a>
+              <a class="nav-link text-white br_05" href="#">classifiche</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white br_05 px-2" href="#">generi e mood</a>
+              <a class="nav-link text-white br_05 href="#">generi e mood</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white br_05 px-2" href="#">nuove uscite</a>
+              <a class="nav-link text-white br_05" href="#">nuove uscite</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white br_05 px-2" href="#">scopri</a>
+              <a class="nav-link text-white br_05" href="#">scopri</a>
             </li>
           </ul>
 
         </div>
         <!-- end Main_navbar -->
+
+        <!-- Recently Played section -->
+        <div class="recently_gallery px-4">
+
+          <h3 class="font-weight-light text-white text-lg-left mt-4 mb-4">Recently played</h3>
         
+          <div class="row text-center text-lg-left">
+        
+            <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+              <a href="#" class="d-block h-100 text-decoration-none">
+                <img class="img-fluid" src="./assets/img/metal_lifting.jpg" alt="">
+                <div class="card_body text-white">
+                  <h6 class="pt-2">Heavy Metal</h6>
+                  <span class="subtitle text_grey">Subtitle</span>  
+                </div>
+              </a>  
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+              <a href="#" class="d-block h-100 text-decoration-none">
+                <img class="img-fluid" src="./assets/img/stranger.jpeg" alt="">
+                <div class="card_body text-white">
+                  <h6 class="pt-2">Stranger Things Vol.1 (a Netflix Original Series Soundtrack)</h6>
+                  <span class="subtitle text_grey">Kyle Dixon & Michael Stain</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+              <a href="#" class="d-block h-100 text-decoration-none">
+                <img class="img-fluid" src="./assets/img/aquietplace.jpeg" alt="">
+                <div class="card_body text-white">
+                  <h6 class="pt-2">A quiet piace</h6>
+                  <span class="subtitle text_grey">Subtitle</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+              <a href="#" class="d-block h-100 text-decoration-none">
+                <img class="img-fluid" src="./assets/img/split.jpeg" alt="">
+                <div class="card_body text-white">
+                  <h6 class="pt-2">Split</h6>
+                  <span class="subtitle text_grey">Subtitle</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+              <a href="#" class="d-block h-100 text-decoration-none">
+                <img class="img-fluid" src="./assets/img/cure.jpeg" alt="">
+                <div class="card_body text-white">
+                  <h6 class="pt-2">A cure for wellness</h6>
+                  <span class="subtitle text_grey">Subtitle</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+              <a href="#" class="d-block h-100 text-decoration-none">
+                <img class="img-fluid" src="./assets/img/sinister.jpeg" alt="">
+                <div class="card_body text-white">
+                  <h6 class="pt-2">Sinister</h6>
+                  <span class="subtitle text_grey">Subtitle</span>
+                </div>
+              </a>
+            </div>
+            
+          </div>
+        
+        </div>
+        <!-- end Recently Played section -->
 
+        <!-- Create for you section -->
+        <div class="foryou_gallery px-4">
 
+          <h3 class="font-weight-light text-white text-lg-left mt-4 mb-2">Creato per Emanuele</h3>
+          <h5 class="subtitle text_grey mt-1 mb-4 pb-2">Più ascolti, più accurati saranno i suggerimenti</h5> 
+        
+          <div class="row text-center text-lg-left">
+        
+            <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+              <a href="#" class="d-block h-100 text-decoration-none">
+                <img class="img-fluid" src="./assets/img/radar.jpeg" alt="">
+                <div class="card_body text-white">
+                  <h6 class="pt-2">Release Radar</h6>
+                </div>
+              </a>  
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+              <a href="#" class="d-block h-100 text-decoration-none">
+                <img class="img-fluid" src="./assets/img/mixdaily.jpeg" alt="">
+                <div class="card_body text-white">
+                  <h6 class="pt-2">Daily Mix 1</h6>
+                </div>
+              </a>
+            </div>
 
+          </div>
+        
+        </div>
+        <!-- end Create for you section -->
+
+        <!-- Popular section -->
+        <div class="popular_section px-4">
+
+          <h3 class="font-weight-light text-white text-lg-left mt-4 mb-2">Artisti più popolari</h3>
+          <h5 class="subtitle text_grey mt-1 mb-4 pb-2">Più ascolti, più accurati saranno i suggerimenti</h5> 
+        
+          <div class="row text-center text-lg-left">
+        
+            <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+              <a href="#" class="d-block h-100 text-decoration-none">
+                <img class="img-fluid" src="./assets/img/youg.jpeg" alt="">
+                <div class="card_body text-white">
+                  <h6 class="pt-2">Lana del Rey</h6>
+                </div>
+              </a>  
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+              <a href="#" class="d-block h-100 text-decoration-none">
+                <img class="img-fluid" src="./assets/img/einaudi.jpeg" alt="">
+                <div class="card_body text-white">
+                  <h6 class="pt-2">Ludivico Enaudi</h6>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        
+        </div>
+        <!-- end Popular section -->
+  
       </div>
-
-
 
     </main>
     <!-- end Site main -->
+
+    <!-- Site footer -->
+    <div class="footer_nav prova">
+
+    </div>
+    <!-- Site footer -->
     
 </body>
 
