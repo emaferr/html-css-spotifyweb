@@ -7,12 +7,12 @@ body{
 
 /* Utility */
 .container_page{
-    width: 85%;
-    margin-left: 15%;
+    width: calc(100% - 220px);
+    margin-left: 220px;
 }
 
 .vh100{
-   height: 100vh;
+   height: calc(100vh - 80px);
 }
 
 .br_05{
@@ -36,7 +36,7 @@ body{
 
 /* Head navbar */
 .head_navbar{
-    background-color: #000000;
+    background-color: #0000003f;
     position: fixed;
     width: 100%;
     top: 0;
@@ -54,7 +54,7 @@ body{
 .vertical_navbar{
     position: fixed;
     top: 0;
-    width: 15%;
+    width: 220px;
 }
 
 .nav-link{
@@ -64,9 +64,6 @@ body{
 
 .logo > img{
     height: 2rem;
-}
-
-.logo_large{
 }
 
 .logo_small{
@@ -96,8 +93,13 @@ body{
 
 /* Main navbar */
 .main_nav a{
-    font-size: .8rem;
+    font-size: .75rem;
     font-weight: 500;
+}
+
+.main_nav .nav-item{
+    padding-left: .7rem;
+    padding-right: .7rem;
 }
 
 .main_link_active::after{
@@ -108,4 +110,70 @@ body{
     margin: auto;
     background-color: #ADFF2F;
     margin-top: -.2rem;
+}
+
+/* Recently Played */
+.prova{
+    height: 80px;
+    width: 100%;
+    background-color: salmon;
+    position: fixed;
+    bottom: 0;
+}
+
+.card_body{
+    font-weight: 600;
+}
+
+.card_body h6{
+    font-size: .9rem;
+    min-width: 11vw;
+}
+
+.subtitle{
+    font-size: .7rem;
+    vertical-align: super;
+    line-height: 0rem;
+}
+
+/* Popular srction */
+.popular_section{
+    padding-bottom: 9rem;
+}
+
+.popular_section img{
+    border-radius: 50%;
+}
+
+
+
+
+@media only screen and (max-width: 640px){
+
+    .container_page{
+        width: calc(100% - 60px);
+        margin-left: 60px;
+    }
+    .vertical_navbar{
+        width: 60px;
+        text-align: center;
+    }
+
+    .small_none{
+        display: none;
+    }
+
+    .logo_small{
+        display: block;
+    }
+
+
+    
+
+}
+
+@media only screen and (max-width: 576px){  
+    h3{
+        text-align: center;
+    }
 }
