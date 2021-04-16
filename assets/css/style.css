@@ -145,7 +145,10 @@ body{
     border-radius: 50%;
 }
 
-
+.scroll_playlist{
+    height: calc(100vh - 420px);
+    overflow-y: overlay;
+}
 
 
 @media only screen and (max-width: 640px){
