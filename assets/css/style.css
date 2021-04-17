@@ -61,7 +61,6 @@ body{
     transition: .2s;
 }
 
-
 /* Vertical navbar */
 .vertical_navbar{
     position: fixed;
@@ -174,10 +173,16 @@ body{
     bottom: 0;
     width: 100%;
     z-index: 99;
+    font-weight: 600;
+}
+
+.player{
+    cursor: pointer;
 }
 
 .song_play{
     display: flex;
+    cursor: pointer;
 }
 
 .song{
@@ -198,6 +203,8 @@ body{
     justify-content: center;
     align-items: center;
     font-size: .6rem;
+    cursor: pointer;
+    position: relative;
 }
 
 .progress{
@@ -214,8 +221,16 @@ body{
         justify-content: flex-end;
         margin-top: 32.5px;
         font-size: 0.9rem;
+        cursor: pointer;
 }
 
+.time_hover{
+    position: absolute;
+    left: 30%;
+    bottom: 0vw;
+    font-size: .9rem;
+    visibility: hidden;
+}
 
 /* Hover */
 .br1:hover{
@@ -236,9 +251,31 @@ body{
     display: block;
 }
 
+.play_footer:hover{
+    transform: scale(1.2);
+}
+
+.song_play i:hover, .song_play a:hover{
+    color: #ffffff;
+}
+
+#under_line:hover{
+    border-bottom: 1px solid #ffffff;
+}
+
+.progress:hover .progress-bar{
+    background-color: #ADFF2F;
+}
+
+.progress:hover .time_hover{
+    visibility: visible;
+}
+
+
 
 /* Media Query */
 @media only screen and (max-width: 768px){
+
     .progress_bar .tablet_none{
         display: none;
     }
@@ -253,6 +290,11 @@ body{
 
     .volume_bar{
         transform: scale(1.2);
+    }
+
+    .time_hover{
+        left: 17%;
+        bottom: -.7vw;
     }
    
 }
@@ -283,9 +325,11 @@ body{
 }
 
 @media only screen and (max-width: 576px){  
+
     h3{
         text-align: center;
     }
+
 }
 
 @media only screen and (max-width: 500px){
@@ -306,7 +350,6 @@ body{
     #btn_upgrade{
         font-size: .5rem;
     }
-    
 
 }
 
