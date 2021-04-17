@@ -24,6 +24,14 @@ body{
     background-color: #000000;
 }
 
+.bg_smoke_white{
+    background-color: #f5f5f5;
+}
+
+.text_smoke_white{
+    color: #f5f5f5;
+}
+
 .bg_main{
     background-color: #141922;
 }
@@ -42,6 +50,7 @@ body{
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 9;
 }
 
 #btn_upgrade{
@@ -116,14 +125,6 @@ body{
 }
 
 /* Recently Played */
-.prova{
-    height: 80px;
-    width: 100%;
-    background-color: salmon;
-    position: fixed;
-    bottom: 0;
-}
-
 .card_body{
     font-weight: 600;
 }
@@ -166,6 +167,56 @@ body{
     overflow-y: overlay;
 }
 
+/* Footer */
+.footer_nav{
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.song_play{
+    display: flex;
+}
+
+.song{
+    font-size: .6rem;
+    margin-right: 2rem;
+}
+
+.song h6{
+    font-size: .7rem
+}
+
+.song_play img{
+    height: 3rem;
+}
+
+.progress_bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .6rem;
+}
+
+.progress{
+    width: 55%;
+    height: .2rem;
+    background-color: #797B80;  
+}
+
+.play_footer{
+    font-size: 1.9rem;
+}
+
+.volume_bar{
+        justify-content: flex-end;
+        margin-top: 32.5px;
+        font-size: 0.9rem;
+}
+
+
 /* Hover */
 .br1:hover{
     filter: brightness(1);
@@ -186,9 +237,26 @@ body{
 }
 
 
-
-
 /* Media Query */
+@media only screen and (max-width: 768px){
+    .progress_bar .tablet_none{
+        display: none;
+    }
+
+    .progress_bar .progress{
+        width: 100%;
+    }
+
+    .song_play .tablet_none{
+        display: none; 
+    }
+
+    .volume_bar{
+        transform: scale(1.2);
+    }
+   
+}
+
 @media only screen and (max-width: 640px){
 
     .container_page{
@@ -208,8 +276,9 @@ body{
         display: block;
     }
 
-
-    
+    .song_play i{
+        display: none;
+    }
 
 }
 
@@ -218,3 +287,28 @@ body{
         text-align: center;
     }
 }
+
+@media only screen and (max-width: 500px){
+
+    .player .tablet_none, .volume_bar .progress{
+        display: none;
+    }
+
+    .volume_bar i{
+        transform: scale(1.5);
+        padding-right: 1.2rem;
+    }
+
+    .col-7{
+        width: 50%;
+    }
+
+    #btn_upgrade{
+        font-size: .5rem;
+    }
+    
+
+}
+
+
+
