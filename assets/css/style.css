@@ -164,7 +164,7 @@ body{
 
 .scroll_playlist{
     height: calc(100vh - 420px);
-    overflow-y: overlay;
+    overflow-y: auto;
 }
 
 /* Footer */
