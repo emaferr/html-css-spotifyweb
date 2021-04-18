@@ -16,7 +16,7 @@ body{
 }
 
 .br_05{
-    filter: brightness(0.5);
+    filter: brightness(.5);
 }
 
 /* Colors */
@@ -221,7 +221,7 @@ body{
 .volume_bar{
         justify-content: flex-end;
         margin-top: 32.5px;
-        font-size: 0.9rem;
+        font-size: .9rem;
         cursor: pointer;
 }
 
@@ -249,7 +249,7 @@ body{
 }
 
 .play:hover .play_img{
-    filter: brightness(0.5);
+    filter: brightness(.5);
 }
 
 .play:hover i{
@@ -314,6 +314,10 @@ body{
         left: 38%;
         bottom: 0vw;
     }
+
+    .install_app img{
+        margin-right: .2rem;
+    }
    
 }
 
@@ -324,7 +328,7 @@ body{
         margin-left: 60px;
     }
     .vertical_navbar{
-        width: 60px;
+        width: 65px;
         text-align: center;
     }
 
@@ -390,7 +394,7 @@ body{
     .song_play img{
         border-radius: 50%;
         height: 17vw;
-        transform: scale(0.8);
+        transform: scale(.8);
     }
 
     #btn_upgrade{
