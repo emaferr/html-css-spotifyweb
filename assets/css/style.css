@@ -66,6 +66,7 @@ body{
     position: fixed;
     top: 0;
     width: 220px;
+    z-index: 99;
 }
 
 .nav-link{
@@ -172,7 +173,7 @@ body{
     position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: 99;
+    z-index: 999;
     font-weight: 600;
 }
 
@@ -232,6 +233,10 @@ body{
     visibility: hidden;
 }
 
+#volume_hover{
+    left: 50%;
+}
+
 /* Hover */
 .br1:hover{
     filter: brightness(1);
@@ -274,6 +279,14 @@ body{
 
 
 /* Media Query */
+@media only screen and (max-width: 992px){
+
+    #volume_hover{
+        left: 10vw;
+    }
+
+}
+
 @media only screen and (max-width: 768px){
 
     .progress_bar .tablet_none{
@@ -295,6 +308,11 @@ body{
     .time_hover{
         left: 17%;
         bottom: -.7vw;
+    }
+
+    #volume_hover{
+        left: 38%;
+        bottom: 0vw;
     }
    
 }
@@ -349,6 +367,34 @@ body{
 
     #btn_upgrade{
         font-size: .5rem;
+    }
+
+}
+
+@media only screen and (max-width: 320px){
+
+    .progress{
+        display: none;
+    }
+
+    .player{
+        transform: scale(.8);
+        margin-top: 1rem;
+    }
+
+    .play_footer{
+        margin-left: .2rem!important;
+        margin-right: .2rem!important;
+    }
+
+    .song_play img{
+        border-radius: 50%;
+        height: 17vw;
+        transform: scale(0.8);
+    }
+
+    #btn_upgrade{
+        font-size: .3rem;
     }
 
 }
